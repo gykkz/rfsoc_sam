@@ -11,3 +11,6 @@ zcu111:
 
 zcu208:
 	$(MAKE) -C boards/ZCU208/rfsoc_sam/
+
+zcu216:
+	$(MAKE) -C boards/ZCU216/rfsoc_sam/
