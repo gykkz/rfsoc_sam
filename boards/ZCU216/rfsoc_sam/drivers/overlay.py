@@ -5,7 +5,7 @@ __date__ = '19th May 2023'
 __version_name__ = '<a href="https://www.google.com/search?q=the+cobbler" target="_blank" rel="noopener noreferrer">The Cobbler</a>'
 __version_number__ = '0.4.3'
 __channels__ = 'Quad-channel'
-__board__ = 'ZCU208'
+__board__ = 'ZCU216'
 __release__ = 'release'
 __info__ = 'PYNQ on RFSoC: Spectrum Analyzer.'
 __support__ = '<a href="https://github.com/strath-sdr/rfsoc_sam" target="_blank" rel="noopener noreferrer">https://github.com/strath-sdr/rfsoc_sam</a>'
@@ -65,7 +65,7 @@ class Overlay(Overlay):
             self.init_rf_clks(lmx_freq=PLL_FREQUENCY)
             
 
-    def init_rf_clks(self, lmk_freq=245.76, lmx_freq=491.52):
+    def init_rf_clks(self, lmk_freq=122.88, lmx_freq=245.76):
         """Initialise the LMX and LMK clocks for RF-DC operation.
         """
         xrfclk.set_ref_clks(lmk_freq=lmk_freq, lmx_freq=lmx_freq)
